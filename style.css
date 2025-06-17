@@ -72,6 +72,10 @@ div {
     unicode-bidi: isolate;
 }
 
+.middle-container {
+    margin: 100px 0;
+}
+
 .world {
     height: 400px;
     width: 400px;
