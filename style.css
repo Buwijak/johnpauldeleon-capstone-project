@@ -4,6 +4,11 @@
     padding-top: 100px;
 }
 
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
 body {
     background-color: #D9EDBF;
     margin: 0;
@@ -76,27 +81,7 @@ div {
     margin: 100px 0;
 }
 
-.world {
-    height: 400px;
-    width: 400px;
-}
 
-.paul {
-    height: 500px;
-    width: 500px;
-}
-
-.bike-packing {
-   height: 400px;
-   width: 400px;
-   border-radius: 30%;
-}
-
-.laptop-coding {
-   height: 400px;
-   width: 400px;
-   border-radius: 30%;
-}
 
 .row {
     --bs-gutter-x: 1.5rem;
@@ -157,4 +142,17 @@ a {
     color: #90D26D;
     font-size: 0.75rem;
     padding: 20px 0;
+}
+
+.paul,
+.bike-packing,
+.laptop-coding,
+.world {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.bike-packing, .laptop-coding {
+    border-radius: 40px;
 }
